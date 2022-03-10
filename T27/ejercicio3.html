@@ -1,0 +1,56 @@
+<html>
+    <title>Ejercicio 3</title>
+    <body>
+        <head>
+            <style>
+                table{
+                    width: 100%;
+                }
+
+                table,
+                th,
+                td {
+                    padding: 10px;
+                    border: 3px solid dimgray;
+                    border-collapse: collapse;
+                }
+
+                td{
+                    text-align: center;
+                }
+
+                tr:nth-child(1) > td {
+                    background-color:mediumspringgreen;
+                }
+
+                tr:nth-child(2) > td:first-child {
+                    background-color:aqua;
+                    text-align: left;
+                }
+
+                tr:nth-child(3) > td:last-child {
+                    background-color:hotpink;
+                }
+
+            </style>
+        </head>
+        <table>
+            <tr>
+                <td colspan="3">CELDA 1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">CELDA 2</td>
+                <td>CELDA 3</td>
+                <td>CELDA 4</td>
+            </tr>
+            <tr>
+                <td>CELDA 5</td>
+                <td rowspan="2">CELDA 6</td>
+            </tr>
+            <tr>
+                <td>CELDA 7</td>
+                <td>CELDA 8</td>
+            </tr>
+        </table>
+    </body>
+</html>
